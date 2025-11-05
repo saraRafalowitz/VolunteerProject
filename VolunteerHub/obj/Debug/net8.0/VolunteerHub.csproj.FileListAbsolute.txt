@@ -1,0 +1,65 @@
+C:\Users\user1\Pictures\תכנות\שנה ב\NRT\VolunteerHub\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\user1\Pictures\תכנות\שנה ב\NRT\VolunteerHub\bin\Debug\net8.0\appsettings.json
+C:\Users\user1\Pictures\תכנות\שנה ב\NRT\VolunteerHub\bin\Debug\net8.0\VolunteerHub.exe
+C:\Users\user1\Pictures\תכנות\שנה ב\NRT\VolunteerHub\bin\Debug\net8.0\VolunteerHub.deps.json
+C:\Users\user1\Pictures\תכנות\שנה ב\NRT\VolunteerHub\bin\Debug\net8.0\VolunteerHub.runtimeconfig.json
+C:\Users\user1\Pictures\תכנות\שנה ב\NRT\VolunteerHub\bin\Debug\net8.0\VolunteerHub.dll
+C:\Users\user1\Pictures\תכנות\שנה ב\NRT\VolunteerHub\bin\Debug\net8.0\VolunteerHub.pdb
+C:\Users\user1\Pictures\תכנות\שנה ב\NRT\VolunteerHub\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\user1\Pictures\תכנות\שנה ב\NRT\VolunteerHub\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\user1\Pictures\תכנות\שנה ב\NRT\VolunteerHub\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\user1\Pictures\תכנות\שנה ב\NRT\VolunteerHub\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\user1\Pictures\תכנות\שנה ב\NRT\VolunteerHub\obj\Debug\net8.0\VolunteerHub.csproj.AssemblyReference.cache
+C:\Users\user1\Pictures\תכנות\שנה ב\NRT\VolunteerHub\obj\Debug\net8.0\VolunteerHub.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user1\Pictures\תכנות\שנה ב\NRT\VolunteerHub\obj\Debug\net8.0\VolunteerHub.AssemblyInfoInputs.cache
+C:\Users\user1\Pictures\תכנות\שנה ב\NRT\VolunteerHub\obj\Debug\net8.0\VolunteerHub.AssemblyInfo.cs
+C:\Users\user1\Pictures\תכנות\שנה ב\NRT\VolunteerHub\obj\Debug\net8.0\VolunteerHub.csproj.CoreCompileInputs.cache
+C:\Users\user1\Pictures\תכנות\שנה ב\NRT\VolunteerHub\obj\Debug\net8.0\VolunteerHub.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\user1\Pictures\תכנות\שנה ב\NRT\VolunteerHub\obj\Debug\net8.0\VolunteerHub.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\user1\Pictures\תכנות\שנה ב\NRT\VolunteerHub\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\user1\Pictures\תכנות\שנה ב\NRT\VolunteerHub\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\user1\Pictures\תכנות\שנה ב\NRT\VolunteerHub\obj\Debug\net8.0\staticwebassets\msbuild.VolunteerHub.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\user1\Pictures\תכנות\שנה ב\NRT\VolunteerHub\obj\Debug\net8.0\staticwebassets\msbuild.build.VolunteerHub.props
+C:\Users\user1\Pictures\תכנות\שנה ב\NRT\VolunteerHub\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.VolunteerHub.props
+C:\Users\user1\Pictures\תכנות\שנה ב\NRT\VolunteerHub\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.VolunteerHub.props
+C:\Users\user1\Pictures\תכנות\שנה ב\NRT\VolunteerHub\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\user1\Pictures\תכנות\שנה ב\NRT\VolunteerHub\obj\Debug\net8.0\scopedcss\bundle\VolunteerHub.styles.css
+C:\Users\user1\Pictures\תכנות\שנה ב\NRT\VolunteerHub\obj\Debug\net8.0\Voluntee.394234BE.Up2Date
+C:\Users\user1\Pictures\תכנות\שנה ב\NRT\VolunteerHub\obj\Debug\net8.0\VolunteerHub.dll
+C:\Users\user1\Pictures\תכנות\שנה ב\NRT\VolunteerHub\obj\Debug\net8.0\refint\VolunteerHub.dll
+C:\Users\user1\Pictures\תכנות\שנה ב\NRT\VolunteerHub\obj\Debug\net8.0\VolunteerHub.pdb
+C:\Users\user1\Pictures\תכנות\שנה ב\NRT\VolunteerHub\obj\Debug\net8.0\VolunteerHub.genruntimeconfig.cache
+C:\Users\user1\Pictures\תכנות\שנה ב\NRT\VolunteerHub\obj\Debug\net8.0\ref\VolunteerHub.dll
+T:\Group A\C#\.net\שרה רפאלוביץ\NRT\VolunteerHub\bin\Debug\net8.0\appsettings.Development.json
+T:\Group A\C#\.net\שרה רפאלוביץ\NRT\VolunteerHub\bin\Debug\net8.0\appsettings.json
+T:\Group A\C#\.net\שרה רפאלוביץ\NRT\VolunteerHub\bin\Debug\net8.0\VolunteerHub.exe
+T:\Group A\C#\.net\שרה רפאלוביץ\NRT\VolunteerHub\bin\Debug\net8.0\VolunteerHub.deps.json
+T:\Group A\C#\.net\שרה רפאלוביץ\NRT\VolunteerHub\bin\Debug\net8.0\VolunteerHub.runtimeconfig.json
+T:\Group A\C#\.net\שרה רפאלוביץ\NRT\VolunteerHub\bin\Debug\net8.0\VolunteerHub.dll
+T:\Group A\C#\.net\שרה רפאלוביץ\NRT\VolunteerHub\bin\Debug\net8.0\VolunteerHub.pdb
+T:\Group A\C#\.net\שרה רפאלוביץ\NRT\VolunteerHub\bin\Debug\net8.0\Microsoft.OpenApi.dll
+T:\Group A\C#\.net\שרה רפאלוביץ\NRT\VolunteerHub\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+T:\Group A\C#\.net\שרה רפאלוביץ\NRT\VolunteerHub\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+T:\Group A\C#\.net\שרה רפאלוביץ\NRT\VolunteerHub\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+T:\Group A\C#\.net\שרה רפאלוביץ\NRT\VolunteerHub\obj\Debug\net8.0\VolunteerHub.csproj.AssemblyReference.cache
+T:\Group A\C#\.net\שרה רפאלוביץ\NRT\VolunteerHub\obj\Debug\net8.0\VolunteerHub.GeneratedMSBuildEditorConfig.editorconfig
+T:\Group A\C#\.net\שרה רפאלוביץ\NRT\VolunteerHub\obj\Debug\net8.0\VolunteerHub.AssemblyInfoInputs.cache
+T:\Group A\C#\.net\שרה רפאלוביץ\NRT\VolunteerHub\obj\Debug\net8.0\VolunteerHub.AssemblyInfo.cs
+T:\Group A\C#\.net\שרה רפאלוביץ\NRT\VolunteerHub\obj\Debug\net8.0\VolunteerHub.csproj.CoreCompileInputs.cache
+T:\Group A\C#\.net\שרה רפאלוביץ\NRT\VolunteerHub\obj\Debug\net8.0\VolunteerHub.MvcApplicationPartsAssemblyInfo.cs
+T:\Group A\C#\.net\שרה רפאלוביץ\NRT\VolunteerHub\obj\Debug\net8.0\VolunteerHub.MvcApplicationPartsAssemblyInfo.cache
+T:\Group A\C#\.net\שרה רפאלוביץ\NRT\VolunteerHub\obj\Debug\net8.0\VolunteerHub.sourcelink.json
+T:\Group A\C#\.net\שרה רפאלוביץ\NRT\VolunteerHub\obj\Debug\net8.0\staticwebassets.build.json
+T:\Group A\C#\.net\שרה רפאלוביץ\NRT\VolunteerHub\obj\Debug\net8.0\staticwebassets.development.json
+T:\Group A\C#\.net\שרה רפאלוביץ\NRT\VolunteerHub\obj\Debug\net8.0\staticwebassets\msbuild.VolunteerHub.Microsoft.AspNetCore.StaticWebAssets.props
+T:\Group A\C#\.net\שרה רפאלוביץ\NRT\VolunteerHub\obj\Debug\net8.0\staticwebassets\msbuild.build.VolunteerHub.props
+T:\Group A\C#\.net\שרה רפאלוביץ\NRT\VolunteerHub\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.VolunteerHub.props
+T:\Group A\C#\.net\שרה רפאלוביץ\NRT\VolunteerHub\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.VolunteerHub.props
+T:\Group A\C#\.net\שרה רפאלוביץ\NRT\VolunteerHub\obj\Debug\net8.0\staticwebassets.pack.json
+T:\Group A\C#\.net\שרה רפאלוביץ\NRT\VolunteerHub\obj\Debug\net8.0\scopedcss\bundle\VolunteerHub.styles.css
+T:\Group A\C#\.net\שרה רפאלוביץ\NRT\VolunteerHub\obj\Debug\net8.0\Voluntee.394234BE.Up2Date
+T:\Group A\C#\.net\שרה רפאלוביץ\NRT\VolunteerHub\obj\Debug\net8.0\VolunteerHub.dll
+T:\Group A\C#\.net\שרה רפאלוביץ\NRT\VolunteerHub\obj\Debug\net8.0\refint\VolunteerHub.dll
+T:\Group A\C#\.net\שרה רפאלוביץ\NRT\VolunteerHub\obj\Debug\net8.0\VolunteerHub.pdb
+T:\Group A\C#\.net\שרה רפאלוביץ\NRT\VolunteerHub\obj\Debug\net8.0\VolunteerHub.genruntimeconfig.cache
+T:\Group A\C#\.net\שרה רפאלוביץ\NRT\VolunteerHub\obj\Debug\net8.0\ref\VolunteerHub.dll

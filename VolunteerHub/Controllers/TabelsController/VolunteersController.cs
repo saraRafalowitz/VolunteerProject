@@ -1,6 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using VolunteerHub.Models;   // או Modules
+using VolunteerHub.Core.Models;
 using System.Collections.Generic;
+using VolunteerHub.Core.Services;
+using AutoMapper;
+using VolunteerHub.Core.DTO;
+using VolunteerHub.Models;
 
 namespace VolunteerHub.Controllers
 {
@@ -8,30 +12,51 @@ namespace VolunteerHub.Controllers
     [ApiController]
     public class VolunteersController : ControllerBase
     {
-        private static readonly List<Volunteer> Volunteers = new();
+        private readonly IVolunteerService _volunteerService;
+        private readonly IMapper _mapper;
+
+        public VolunteersController(IVolunteerService volunteerService,IMapper mapper)
+        {
+            _volunteerService = volunteerService;
+            _mapper = mapper;
+        }
 
         [HttpGet]
-        public IActionResult GetAll() => Ok(Volunteers);
+        public async Task<ActionResult> GetAllAsync()
+        {
+            var volunteer=await _volunteerService.GetAllAsync();
+            return Ok(_mapper.Map<List<ProjectDTO>>(volunteer));
+        }
 
         [HttpGet("{id}")]
-        public IActionResult GetById(int id)
+        public async Task<ActionResult> GetByIdAsync(int id)
         {
-            var volunteer = Volunteers.Find(v => v.Id == id);
-            return volunteer == null ? NotFound() : Ok(volunteer);
+            var v=await _volunteerService.GetByIdAsync(id);
+            if(v != null)
+            {
+                var vol= _mapper.Map<ProjectDTO>(v);
+                return Ok(vol);
+            }
+            return NotFound();
         }
 
         [HttpPost]
-        public IActionResult Create([FromBody] Volunteer volunteer)
+        public async Task<ActionResult> CreateAsync([FromBody] VolunteerPostModel volunteer)
         {
-            volunteer.Id = Volunteers.Count + 1;
-            Volunteers.Add(volunteer);
-            return CreatedAtAction(nameof(GetById), new { id = volunteer.Id }, volunteer);
+            var vol=await _volunteerService.GetByIdAsync(volunteer.Id);
+            if(vol == null)
+            {
+                var volunteer1 = _mapper.Map<Volunteer>(volunteer);
+                _volunteerService.Create(volunteer1);
+                return Ok(volunteer1);
+            }
+            return Conflict();
         }
 
         [HttpPut("{id}")]
-        public IActionResult Update(int id, [FromBody] Volunteer updatedVolunteer)
+        public async Task<ActionResult> UpdateAsync(int id, [FromBody] Volunteer updatedVolunteer)
         {
-            var existing = Volunteers.Find(v => v.Id == id);
+            var existing =await _volunteerService.GetByIdAsync(id);
             if (existing == null) return NotFound();
 
             existing.FullName = updatedVolunteer.FullName;
@@ -42,12 +67,12 @@ namespace VolunteerHub.Controllers
         }
 
         [HttpDelete("{id}")]
-        public IActionResult Delete(int id)
+        public async Task<IActionResult> DeleteAsync(int id)
         {
-            var volunteer = Volunteers.Find(v => v.Id == id);
+            var volunteer =await _volunteerService.GetByIdAsync(id);
             if (volunteer == null) return NotFound();
 
-            Volunteers.Remove(volunteer);
+            _volunteerService.DeleteAsync(volunteer.Id);
             return Ok($"Volunteer {id} deleted");
         }
     }

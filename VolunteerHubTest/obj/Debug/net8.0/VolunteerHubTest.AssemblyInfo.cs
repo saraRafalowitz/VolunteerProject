@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VolunteerHubTest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+313c89df3ed3032a4bc3992fcfca13bef4ee0794")]
 [assembly: System.Reflection.AssemblyProductAttribute("VolunteerHubTest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VolunteerHubTest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

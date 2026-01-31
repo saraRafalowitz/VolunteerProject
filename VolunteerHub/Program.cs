@@ -1,22 +1,37 @@
-using VolunteerHub.DataContext.DataContextVolunteer;
+using System.Text.Json.Serialization;
+using VolunteerHub.Core;
+using VolunteerHub;
+using VolunteerHub.Core.Repositories;
+using VolunteerHub.Core.Services;
+using VolunteerHub.Data;
+
+
+using VolunteerHub.Data.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
+builder.Services.AddControllers().AddJsonOptions(options =>
+{
+    options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+    options.JsonSerializerOptions.WriteIndented = true;
+});
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddScoped<ICoordinatorRepository, CoordinatorRepository>();
+builder.Services.AddScoped<IProjectRepository, ProjectRepository>();
+builder.Services.AddScoped<IVolunteerRepository, VolunteerRepository>();
 
-//builder.Services.AddScoped<IDataContext, DataContext>(); - יוצר מופע  חדש עבור כל בקשה
-//יוצר מופע בודד עבור כל זמן הריצה (עבור כל הבקשות)
-builder.Services.AddSingleton<IDataContext, DataContext>();
-//builder.Services.AddTransient<IDataContext, DataContext>(); - יוצר מופע חדש עבור על אוביקט (גם אם באותה הבקשה יהיה כמה פעמים מופעים)
+builder.Services.AddScoped<ICoordinatorService, CoordinatorsService>();
+builder.Services.AddScoped<IProjectService, ProjectService>();
+builder.Services.AddScoped<IVolunteerService, VolunteerService>();
+builder.Services.AddAutoMapper(typeof(MappingProfile), typeof(MappingPostModeles));
+
+
+builder.Services.AddDbContext<DataContext>();
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

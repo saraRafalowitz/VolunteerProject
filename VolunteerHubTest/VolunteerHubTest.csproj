@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFramework>net8.0</TargetFramework>
@@ -17,6 +17,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<ProjectReference Include="..\VolunteerHub.Core\VolunteerHub.Core.csproj" />
+		<ProjectReference Include="..\VolunteerHub.Data\VolunteerHub.Data.csproj" />
+		<ProjectReference Include="..\VolunteerHub.Service\VolunteerHub.Service.csproj" />
 		<ProjectReference Include="..\VolunteerHub\VolunteerHub.csproj" />
 	</ItemGroup>
 

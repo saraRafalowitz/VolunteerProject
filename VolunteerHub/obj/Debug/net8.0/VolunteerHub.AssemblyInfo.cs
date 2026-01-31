@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VolunteerHub")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+313c89df3ed3032a4bc3992fcfca13bef4ee0794")]
 [assembly: System.Reflection.AssemblyProductAttribute("VolunteerHub")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VolunteerHub")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

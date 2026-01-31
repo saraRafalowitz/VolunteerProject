@@ -1,6 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using VolunteerHub.Models;
+using VolunteerHub.Core.Models;
 using System.Collections.Generic;
+using VolunteerHub.Core.Services;
+using AutoMapper;
+using VolunteerHub.Core.DTO;
+using VolunteerHub.Models;
 
 namespace VolunteerHub.Controllers.TabelsController
 {
@@ -8,30 +12,51 @@ namespace VolunteerHub.Controllers.TabelsController
     [ApiController]
     public class ProjectsController : ControllerBase
     {
-        private static readonly List<Project> Projects = new();
+        private readonly IProjectService _projectService;
+        private readonly IMapper _mapper;
+
+        public ProjectsController(IProjectService projectService,IMapper mapper)
+        {
+            _projectService = projectService;
+            _mapper = mapper;
+        }
 
         [HttpGet]
-        public IActionResult GetAll() => Ok(Projects);
+        public async Task<ActionResult> GetAllAsync()
+        {
+            var projects =await _projectService.GetAllAsync();
+            return Ok(_mapper.Map<List<ProjectDTO>>(projects));
+        }
 
         [HttpGet("{id}")]
-        public IActionResult GetById(int id)
+        public async Task<ActionResult> GetByIdAsync(int id)
         {
-            var project = Projects.Find(p => p.Id == id);
-            return project == null ? NotFound() : Ok(project);
+            var project =await _projectService.GetByIdAsync(id);
+            if (project != null)
+            {
+                var prog=_mapper.Map<ProjectDTO>(project);
+                return Ok(prog);
+            }
+            return NotFound();
         }
 
         [HttpPost]
-        public IActionResult Create([FromBody] Project project)
+        public async Task<ActionResult> CreateAsync([FromBody] ProjectPostModel project)
         {
-            project.Id = Projects.Count + 1;
-            Projects.Add(project);
-            return CreatedAtAction(nameof(GetById), new { id = project.Id }, project);
+            var prog=await _projectService.GetByIdAsync(project.Id);
+            if (prog == null)
+            {
+                var pro=_mapper.Map<Project>(project);
+                _projectService.Create(pro);
+                return Ok(pro);
+            }
+            return Conflict();
         }
 
         [HttpPut("{id}")]
-        public IActionResult Update(int id, [FromBody] Project updated)
+        public async Task<ActionResult> UpdateAsync(int id, [FromBody] Project updated)
         {
-            var existing = Projects.Find(p => p.Id == id);
+            var existing =await _projectService.GetByIdAsync(id);
             if (existing == null) return NotFound();
 
             existing.Name = updated.Name;
@@ -42,12 +67,12 @@ namespace VolunteerHub.Controllers.TabelsController
         }
 
         [HttpDelete("{id}")]
-        public IActionResult Delete(int id)
+        public async Task<IActionResult> DeleteAsync(int id)
         {
-            var project = Projects.Find(p => p.Id == id);
+            var project =await _projectService.GetByIdAsync(id);
             if (project == null) return NotFound();
 
-            Projects.Remove(project);
+            _projectService.DeleteAsync(project.Id);
             return Ok($"Project {id} deleted");
         }
     }
